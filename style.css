@@ -3,6 +3,7 @@
 :root {
   --primary-color: rgb(52, 82, 110);
   --font-color: white;
+  --background-block-font-color: rgb(28, 28, 28);
 }
 
 html {
@@ -56,15 +57,21 @@ select {
     display: inline;
 }
 
+.fixture-container {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
 .team-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 30px auto 10px auto;
     display: flex;
 }
 
 .team-block {
     flex: 1;
     padding: 20px;
+    margin-bottom: 30px;
     min-height: 30vh;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -73,6 +80,14 @@ select {
 
 .team-block:first-child {
     margin-right: 100px;
+}
+
+.fixture-date-location {
+    color: var(--background-block-font-color);
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    /* padding-top: 1em; */
 }
 
 /* .home-block {
