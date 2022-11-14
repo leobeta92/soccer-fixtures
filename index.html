@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Score App</title>
+    <link ref="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Choose Season Block-->
+    <div class="input-container">
+        <!-- <form id="seasonForm" class="form">         
+            <label for="season" id="select-season">Select Season</label>
+            <input type="text" id="chooseSeason" name="season" placeholder="Select Season">
+            
+            <label for="homeTeam" id="team-one">Team 1</label>
+            <input type="text" id="homeTeamInput" name="homeTeam">
+            
+            <label for="awayTeam" id="team-two">Team 2</label>
+            <input type="text" id="awayTeamInput" name="awayTeam">
+            <button id="season">See Result</button>
+            <span id="seasonChosen"></span>
+        </form> -->
+<!-- Using dropdowns for team selection -->
+<form id="seasonForm" class="form">
+<label for="season" id="select-season">Select Teams:</label>
+<select name="homeTeamSelection" id="homeTeamDropdown" form="seasonForm">
+    <option value="none" selected disabled hidden>Select an Option</option>
+    <option value="Arsenal">Arsenal</option>
+    <option value="Chelsea">Chelsea</option>
+    <option value="Manchester United">Manchester United</option>
+    <option value="Liverpool">Liverpool</option>
+    <option value="Everton">Everton</option>
+    <option value="West Ham">West Ham United</option>
+    <option value="Tottenham">Tottenham</option>
+  </select>
+  <select name="awayTeamSelection" id="awayTeamDropdown" form="seasonForm">
+    <option value="none" selected disabled hidden>Select an Option</option>
+    <option value="Arsenal">Arsenal</option>
+    <option value="Chelsea">Chelsea</option>
+    <option value="Manchester United">Manchester United</option>
+    <option value="Liverpool">Liverpool</option>
+    <option value="Everton">Everton</option>
+    <option value="West Ham">West Ham United</option>
+    <option value="Tottenham">Tottenham</option>
+  </select>
+  <input type="text" id="chooseSeason" name="season" placeholder="Select Season">
+  <button id="season">See Results</button>
+</form>
+    </div>
+
+<div class="full-container" id="full-container">
+    <div class="reset" id="reset">
+        <button id="resetBtn" class="reset-button" hidden>Reset</button>
+    </div>
+</div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader" hidden>
+        <!-- <img src="soccericon.png" alt="loading"> -->
+    </div>
+
+    <!-- Script -->
+    <script src="soccer-fixtures-dynamic.js" defer></script>
+</body>
+</html>
