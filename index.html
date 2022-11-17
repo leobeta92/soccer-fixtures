@@ -13,18 +13,7 @@
 
     <!-- Choose Season Block-->
     <div class="input-container">
-        <!-- <form id="seasonForm" class="form">         
-            <label for="season" id="select-season">Select Season</label>
-            <input type="text" id="chooseSeason" name="season" placeholder="Select Season">
-            
-            <label for="homeTeam" id="team-one">Team 1</label>
-            <input type="text" id="homeTeamInput" name="homeTeam">
-            
-            <label for="awayTeam" id="team-two">Team 2</label>
-            <input type="text" id="awayTeamInput" name="awayTeam">
-            <button id="season">See Result</button>
-            <span id="seasonChosen"></span>
-        </form> -->
+        
 <!-- Using dropdowns for team selection -->
 <form id="seasonForm" class="form">
 <label for="season" id="select-season">Select Teams:</label>
@@ -48,7 +37,7 @@
     <option value="West Ham">West Ham United</option>
     <option value="Tottenham">Tottenham</option>
   </select>
-  <input type="text" id="chooseSeason" name="season" placeholder="Select Season">
+  <input type="number" step="1" id="chooseSeason" name="season" min="2010" max="2021" placeholder="ex: 2015">
   <button id="season">See Results</button>
 </form>
     </div>

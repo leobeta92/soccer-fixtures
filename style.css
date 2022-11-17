@@ -37,6 +37,10 @@ body {
     margin: 0 auto;
 }
 
+input#chooseSeason {
+    width: 100px;
+}
+
 input {
     font-size: 18px;
     padding: 10px;
@@ -100,28 +104,6 @@ select {
     font-size: 1.5rem;
     padding-bottom: 10px;
 }
-
-/* .home-block {
-    float: left;
-    width: 300px;
-    max-width: 900px;
-    padding: 20px 30px;
-    margin: 10%;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-.away-block {
-    float: right;
-    width: 300px;
-    max-width: 900px;
-    padding: 20px 30px;
-    margin: 10%;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
-} */
 
 .team-name {
     font-size: 1.75rem;
@@ -188,12 +170,74 @@ button:active {
   }
 
 /* Screen adjust */
-@media screen and (max-width: 1000px) {
-    .away-block {
-        margin: auto 10px;
+@media screen and (max-width: 1200px) {
+    .input-container {
+        width: 95%;
+        min-height: 60vh;
+        margin: 20px auto;
+        padding: 35px 0px;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
     }
 
-    .quote-text {
-        font-size: 2.5rem;
+    .form {
+        padding: 25px;
+        display: grid;
+        
     }
+
+    select {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    input#chooseSeason {
+        width: 100px;
+        margin: auto;
+    }
+    
+    img {
+        width: 100px;
+    }
+
+    button#season {
+        margin: 30px;
+    }
+
+    .fixture-date-location {
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
+
+    .team-block {
+        width: 50%;
+        margin: 10px;
+        min-height: 10vh;
+    }
+
+    .team-block:first-child {
+        margin-right: 10px;
+    }
+
+    .fixture-container {
+        width: 90%;
+    }
+
+    .team-container {
+        width: auto;
+    }
+    .team-name {
+        font-size: 1.5rem;
+    }
+
+    .summary-info {
+        margin: 1em;
+        padding-bottom: 15px;
+    }
+    
 }
